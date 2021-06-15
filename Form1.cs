@@ -21,5 +21,12 @@ namespace FirstDatabase
         {
 
         }
+
+        private void login_Click(object sender, EventArgs e)
+        {
+            Dashboard ds = new Dashboard();
+            ds.Show();
+            this.Hide();
+        }
     }
 }
