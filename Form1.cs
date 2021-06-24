@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -24,16 +25,8 @@ namespace FirstDatabase
 
         private void login_Click(object sender, EventArgs e)
         {
-            if (txtUsername.Text.Equals("Admin") && txtPassword.Text.Equals("Pass"))
-            {
-                Dashboard ds = new Dashboard();
-                ds.Show();
-                this.Hide();
-            }
-            else
-            {
-                MessageBox.Show("Incorrect Username or Password", "Message Box", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            SqlConnection con = new SqlConnection("Data Source=DESKTOP-N8QVAOP; Database=Test_Database_1; ");
+            con = 
         }
 
         private void Form1_Load(object sender, EventArgs e)
