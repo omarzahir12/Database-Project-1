@@ -32,23 +32,27 @@ namespace FirstDatabase
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtID = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtFN = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtLN = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.txtSalary = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.txtAddress = new System.Windows.Forms.TextBox();
+            this.txtGender = new System.Windows.Forms.ComboBox();
+            this.btnUpdate = new System.Windows.Forms.Button();
+            this.btnSave = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
+            this.dgvEmployee = new System.Windows.Forms.DataGridView();
+            this.dtHireDate = new System.Windows.Forms.DateTimePicker();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvEmployee)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -80,12 +84,12 @@ namespace FirstDatabase
             this.label2.TabIndex = 1;
             this.label2.Text = "ID";
             // 
-            // textBox1
+            // txtID
             // 
-            this.textBox1.Location = new System.Drawing.Point(31, 110);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(307, 27);
-            this.textBox1.TabIndex = 2;
+            this.txtID.Location = new System.Drawing.Point(31, 110);
+            this.txtID.Name = "txtID";
+            this.txtID.Size = new System.Drawing.Size(307, 27);
+            this.txtID.TabIndex = 2;
             // 
             // label3
             // 
@@ -96,12 +100,12 @@ namespace FirstDatabase
             this.label3.TabIndex = 1;
             this.label3.Text = "First Name";
             // 
-            // textBox2
+            // txtFN
             // 
-            this.textBox2.Location = new System.Drawing.Point(31, 189);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(307, 27);
-            this.textBox2.TabIndex = 2;
+            this.txtFN.Location = new System.Drawing.Point(31, 189);
+            this.txtFN.Name = "txtFN";
+            this.txtFN.Size = new System.Drawing.Size(307, 27);
+            this.txtFN.TabIndex = 2;
             // 
             // label4
             // 
@@ -112,12 +116,12 @@ namespace FirstDatabase
             this.label4.TabIndex = 1;
             this.label4.Text = "Last Name";
             // 
-            // textBox3
+            // txtLN
             // 
-            this.textBox3.Location = new System.Drawing.Point(31, 271);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(307, 27);
-            this.textBox3.TabIndex = 2;
+            this.txtLN.Location = new System.Drawing.Point(31, 271);
+            this.txtLN.Name = "txtLN";
+            this.txtLN.Size = new System.Drawing.Size(307, 27);
+            this.txtLN.TabIndex = 2;
             // 
             // label5
             // 
@@ -128,12 +132,12 @@ namespace FirstDatabase
             this.label5.TabIndex = 1;
             this.label5.Text = "Email";
             // 
-            // textBox4
+            // txtEmail
             // 
-            this.textBox4.Location = new System.Drawing.Point(31, 350);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(307, 27);
-            this.textBox4.TabIndex = 2;
+            this.txtEmail.Location = new System.Drawing.Point(31, 350);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(307, 27);
+            this.txtEmail.TabIndex = 2;
             // 
             // label6
             // 
@@ -143,13 +147,6 @@ namespace FirstDatabase
             this.label6.Size = new System.Drawing.Size(73, 20);
             this.label6.TabIndex = 1;
             this.label6.Text = "Hire Date";
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(464, 110);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(307, 27);
-            this.textBox5.TabIndex = 2;
             // 
             // label7
             // 
@@ -169,19 +166,12 @@ namespace FirstDatabase
             this.label8.TabIndex = 1;
             this.label8.Text = "Salary";
             // 
-            // textBox6
+            // txtSalary
             // 
-            this.textBox6.Location = new System.Drawing.Point(464, 271);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(307, 27);
-            this.textBox6.TabIndex = 2;
-            // 
-            // textBox7
-            // 
-            this.textBox7.Location = new System.Drawing.Point(464, 189);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(307, 27);
-            this.textBox7.TabIndex = 2;
+            this.txtSalary.Location = new System.Drawing.Point(464, 189);
+            this.txtSalary.Name = "txtSalary";
+            this.txtSalary.Size = new System.Drawing.Size(307, 27);
+            this.txtSalary.TabIndex = 2;
             // 
             // label9
             // 
@@ -192,50 +182,102 @@ namespace FirstDatabase
             this.label9.TabIndex = 1;
             this.label9.Text = "Address";
             // 
-            // textBox8
+            // txtAddress
             // 
-            this.textBox8.Location = new System.Drawing.Point(464, 350);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(307, 27);
-            this.textBox8.TabIndex = 2;
+            this.txtAddress.Location = new System.Drawing.Point(464, 350);
+            this.txtAddress.Name = "txtAddress";
+            this.txtAddress.Size = new System.Drawing.Size(307, 27);
+            this.txtAddress.TabIndex = 2;
             // 
-            // comboBox1
+            // txtGender
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(561, 230);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(151, 28);
-            this.comboBox1.TabIndex = 3;
+            this.txtGender.FormattingEnabled = true;
+            this.txtGender.Items.AddRange(new object[] {
+            "Male",
+            "Female"});
+            this.txtGender.Location = new System.Drawing.Point(464, 270);
+            this.txtGender.Name = "txtGender";
+            this.txtGender.Size = new System.Drawing.Size(307, 28);
+            this.txtGender.TabIndex = 3;
+            // 
+            // btnUpdate
+            // 
+            this.btnUpdate.Location = new System.Drawing.Point(31, 400);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(159, 28);
+            this.btnUpdate.TabIndex = 4;
+            this.btnUpdate.Text = "Update";
+            this.btnUpdate.UseVisualStyleBackColor = true;
+            // 
+            // btnSave
+            // 
+            this.btnSave.Location = new System.Drawing.Point(320, 400);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(159, 28);
+            this.btnSave.TabIndex = 4;
+            this.btnSave.Text = "Save";
+            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.Location = new System.Drawing.Point(612, 400);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(159, 28);
+            this.btnDelete.TabIndex = 4;
+            this.btnDelete.Text = "Delete";
+            this.btnDelete.UseVisualStyleBackColor = true;
+            // 
+            // dgvEmployee
+            // 
+            this.dgvEmployee.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvEmployee.Location = new System.Drawing.Point(31, 451);
+            this.dgvEmployee.Name = "dgvEmployee";
+            this.dgvEmployee.RowHeadersWidth = 51;
+            this.dgvEmployee.RowTemplate.Height = 29;
+            this.dgvEmployee.Size = new System.Drawing.Size(740, 129);
+            this.dgvEmployee.TabIndex = 5;
+            // 
+            // dtHireDate
+            // 
+            this.dtHireDate.Location = new System.Drawing.Point(464, 110);
+            this.dtHireDate.Name = "dtHireDate";
+            this.dtHireDate.Size = new System.Drawing.Size(307, 27);
+            this.dtHireDate.TabIndex = 6;
             // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(807, 454);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.textBox8);
+            this.ClientSize = new System.Drawing.Size(808, 590);
+            this.Controls.Add(this.dtHireDate);
+            this.Controls.Add(this.dgvEmployee);
+            this.Controls.Add(this.btnDelete);
+            this.Controls.Add(this.btnSave);
+            this.Controls.Add(this.btnUpdate);
+            this.Controls.Add(this.txtGender);
+            this.Controls.Add(this.txtAddress);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox7);
+            this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtSalary);
+            this.Controls.Add(this.txtFN);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txtLN);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtID);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel1);
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Dashboard";
-            this.Text = "Gender";
+            this.Text = "Dashboard";
             this.Load += new System.EventHandler(this.Dashboard_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvEmployee)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -246,21 +288,24 @@ namespace FirstDatabase
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtID;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtFN;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtLN;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox txtSalary;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.TextBox txtAddress;
+        private System.Windows.Forms.ComboBox txtGender;
+        private System.Windows.Forms.Button btnUpdate;
+        private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.DataGridView dgvEmployee;
+        private System.Windows.Forms.DateTimePicker dtHireDate;
     }
 }
